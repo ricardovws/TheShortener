@@ -4,7 +4,7 @@ It was built using Windows Forms consuming a Bitly URL shortener API.
 
 ## How can I run it?
 You can clone or download the code and run it using Visual Studio. Or just download the executable 
-<a href="https://github.com/ricardovws/ColorChanger/raw/master/ColorChanger_exe.rar" download>here</a>.
+<a href="https://github.com/ricardovws/TheShortener/raw/master/TheShortener_exe.rar" download>here</a>.
 
 ## How can I use it?
 1) Paste the long URL that you would like to shorten and click on "Short it!". 
