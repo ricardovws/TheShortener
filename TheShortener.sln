@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1145
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheShortener", "TheShortener\TheShortener.csproj", "{A44B9387-0D37-482E-9118-69FDAA8824B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitlyAPI", "BitlyAPI\BitlyAPI.csproj", "{A7F379EA-2E7E-45A5-A94B-B044E75B2D49}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A44B9387-0D37-482E-9118-69FDAA8824B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A44B9387-0D37-482E-9118-69FDAA8824B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A44B9387-0D37-482E-9118-69FDAA8824B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A44B9387-0D37-482E-9118-69FDAA8824B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7F379EA-2E7E-45A5-A94B-B044E75B2D49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7F379EA-2E7E-45A5-A94B-B044E75B2D49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7F379EA-2E7E-45A5-A94B-B044E75B2D49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7F379EA-2E7E-45A5-A94B-B044E75B2D49}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {47FB71D8-EA77-4378-B769-D11CD8CADE3B}
+	EndGlobalSection
+EndGlobal
