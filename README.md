@@ -1,9 +1,10 @@
 # TheShortener
 It's a tool to create a short URL from a long one using Bitly API.
+
 It was built using Windows Forms consuming a Bitly URL shortener API.
 
 ## How can I run it?
-You can clone or download the code and run it using Visual Studio. Or just download the executable 
+You can clone or download the code and run it using Visual Studio. Or just download the setup file
 <a href="https://github.com/ricardovws/TheShortener/raw/master/TheShortener_exe.rar" download>here</a>.
 
 ## How can I use it?
