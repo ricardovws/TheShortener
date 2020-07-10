@@ -37,13 +37,14 @@ namespace BitlyAPI
                 {
                     string temp = string.Format(_bitlyApiUrl, _bitlyApiToken, WebUtility.UrlEncode(longUrl));
                     var response = client.GetAsync(temp).Result;
-                    if(response.IsSuccessStatusCode)
+
+                    try
                     {
                         var message = response.Content.ReadAsStringAsync().Result;
                         dynamic obj = JsonConvert.DeserializeObject(message);
                         return obj.results[longUrl].shortUrl;
                     }
-                    else
+                    catch (Exception)
                     {
                         return errorMessage;
                     }

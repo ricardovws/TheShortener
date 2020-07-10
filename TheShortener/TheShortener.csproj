@@ -54,6 +54,7 @@
     <Compile Include="FrmShortener.Designer.cs">
       <DependentUpon>FrmShortener.cs</DependentUpon>
     </Compile>
+    <Compile Include="Link.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmShortener.resx">
