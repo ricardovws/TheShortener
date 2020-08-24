@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
 using System.IO;
@@ -32,7 +33,6 @@ namespace TheShortener
             var urlText = textBox2.Text.Split(' ');
             var urlToClipboard = urlText[0];
             Clipboard.SetText(urlToClipboard);
-            //Clipboard.SetText(textBox2.Text);
             textBox2.Text = urlToClipboard + " ---> It has been copied to your clipboard!";
             
         }
@@ -41,6 +41,41 @@ namespace TheShortener
         {
             textBox1.Text = "";
             textBox1.Select();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (textBox3.Visible == false)
+            {
+                textBox3.Visible = true;
+                button5.Visible = true;
+                textBox3.Focus();
+            }
+            else
+            {
+                textBox3.Visible = false;
+                button5.Visible = false;
+            }
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if(textBox3.Text != "")
+            {
+                string apiToken = textBox3.Text;
+                textBox3.Text = "";
+                string directory = AppDomain.CurrentDomain.BaseDirectory;               
+                BitlyAPI.BitlyAPI api = new BitlyAPI.BitlyAPI();
+                string fileJsonName = ConfigurationManager.AppSettings["BitlyApiTokenFileName"];
+                var jsonObj = api.InsertApiTokenJsonFile(fileJsonName);
+                jsonObj["ApiToken"] = apiToken;
+                string output = Newtonsoft.Json.JsonConvert.SerializeObject(jsonObj, Newtonsoft.Json.Formatting.Indented);
+                File.WriteAllText(fileJsonName, output);
+                textBox3.Visible = false;
+                button5.Visible = false;
+            }
+
         }
     }
 }

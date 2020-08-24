@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -19,7 +20,10 @@ namespace BitlyAPI
         public BitlyAPI()
         {
             _bitlyApiUrl = ConfigurationManager.AppSettings["BitlyApiUrl"];
-            _bitlyApiToken = ConfigurationManager.AppSettings["BitlyApiToken"];
+            string fileJsonName = ConfigurationManager.AppSettings["BitlyApiTokenFileName"];
+            var jsonObj = InsertApiTokenJsonFile(fileJsonName);
+            _bitlyApiToken = jsonObj["ApiToken"];
+
         }
 
         public async Task<string> ShortenAsync(string longUrl)
@@ -64,5 +68,13 @@ namespace BitlyAPI
                 return response.IsSuccessStatusCode;
             }
         }
+
+        public dynamic InsertApiTokenJsonFile(string fileJsonName)
+        {
+            string json = File.ReadAllText(fileJsonName);
+            dynamic jsonObj = JsonConvert.DeserializeObject(json);
+            return jsonObj;
+        }
     }
 }
+
