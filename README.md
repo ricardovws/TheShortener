@@ -5,7 +5,7 @@ It was built using Windows Forms consuming a <a href="https://dev.bitly.com/get_
 
 ## How can I run it?
 You can clone or download the code and run it using Visual Studio. Or just download the setup file
-<a href="https://github.com/ricardovws/TheShortener/raw/master/TheShortener_exe.rar" download>here</a>.
+<a href="https://github.com/ricardovws/TheShortener/raw/master/TheShortenerExe.zip" download>here</a>.
 
 ## How can I use it?
 1) Paste the long URL that you would like to shorten and click on "Short it!". 
