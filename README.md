@@ -16,16 +16,16 @@ You can do it <a href="https://bitly.com/a/sign_in">here</a>. After this, in you
 ## How can I use it?
 1) Click on "Insert API Token" and then do it :)
 
-<img src="screenshots/screenshot_0.png" width="40%">
+<img src="screenshots/screenshot_00.png" width="40%">
 
 2) Paste the long URL that you would like to shorten and click on "Short it!". 
 
-<img src="screenshots/screenshot_1.png" width="40%">
+<img src="screenshots/screenshot_01.png" width="40%">
 
 You can clean the text box clicking on "Clean it" and insert another URL there as well.
 
 3) Now it's easy, just click on "Copy it to clipboard" and that's it.
 
-<img src="screenshots/screenshot_2.png" width="40%">
+<img src="screenshots/screenshot_02.png" width="40%">
 
 4) Paste your URL shortened anywhere.
