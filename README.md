@@ -9,7 +9,8 @@ You can clone or download the code and run it using Visual Studio. Or just downl
 
 If you don't have a Bitly account, please, you should do it to keep this application running properly.
 
-You can do it <a href="https://bitly.com/a/sign_in">here</a>
+You can do it <a href="https://bitly.com/a/sign_in">here</a>. After this, in your Bitly profile go to "Profile Settings", and then go to 
+"Generic Access Token", insert your password and generate your API Token.
 
 
 ## How can I use it?
