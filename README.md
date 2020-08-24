@@ -7,15 +7,24 @@ It was built using Windows Forms consuming a <a href="https://dev.bitly.com/get_
 You can clone or download the code and run it using Visual Studio. Or just download the setup file
 <a href="https://github.com/ricardovws/TheShortener/raw/master/TheShortenerExe.zip" download>here</a>.
 
+If you don't have a Bitly account, please, you should do it to keep this application running properly.
+
+You can do it <a href="https://bitly.com/a/sign_in">here</a>
+
+
 ## How can I use it?
-1) Paste the long URL that you would like to shorten and click on "Short it!". 
+1) Click on "Insert API Token" and then do it :)
+
+<img src="screenshots/screenshot_0.png">
+
+2) Paste the long URL that you would like to shorten and click on "Short it!". 
 
 <img src="screenshots/screenshot_1.png">
 
 You can clean the text box clicking on "Clean it" and insert another URL there as well.
 
-2) Now it's easy, just click on "Copy it to clipboard" and that's it.
+3) Now it's easy, just click on "Copy it to clipboard" and that's it.
 
 <img src="screenshots/screenshot_2.png">
 
-3) Paste your URL shortened anywhere.
+4) Paste your URL shortened anywhere.
